@@ -1,0 +1,53 @@
+﻿@import "tailwindcss";
+
+:root {
+  --background: #f8f6f3;
+  --foreground: #1a1a2e;
+  --card-bg: #ffffff;
+  --card-border: #e8e4de;
+  --accent: #c0392b;
+  --accent-hover: #a93226;
+  --muted: #7f8c8d;
+  --nav-bg: #ffffff;
+  --reader-bg: #f8f6f3;
+  --reader-text: #2c3e50;
+}
+
+.dark {
+  --background: #0f0f1a;
+  --foreground: #e0e0e0;
+  --card-bg: #1a1a2e;
+  --card-border: #2a2a3e;
+  --accent: #e74c3c;
+  --accent-hover: #c0392b;
+  --muted: #7f8c8d;
+  --nav-bg: #16162a;
+  --reader-bg: #0f0f1a;
+  --reader-text: #d0d0d0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Noto Serif SC", "Source Han Serif SC", "SimSun", serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-muted: var(--muted);
+  --color-nav-bg: var(--nav-bg);
+  --color-reader-bg: var(--reader-bg);
+  --color-reader-text: var(--reader-text);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
