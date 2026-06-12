@@ -1,4 +1,4 @@
-﻿CREATE TABLE IF NOT EXISTS novels (
+CREATE TABLE IF NOT EXISTS novels (
   id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(16)))),
   title TEXT NOT NULL,
   author TEXT DEFAULT '',
